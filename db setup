@@ -1,0 +1,11 @@
+CREATE DATABASE student_info;
+
+USE student_info;
+
+CREATE TABLE students (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    student_name VARCHAR(255) NOT NULL,
+    course VARCHAR(255) NOT NULL,
+    contact_number VARCHAR(20) NOT NULL,
+    gender ENUM('Male', 'Female') NOT NULL
+);
